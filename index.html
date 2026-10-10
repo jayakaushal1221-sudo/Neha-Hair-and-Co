@@ -1,116 +1,66 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#142f2c">
-  <meta name="description" content="Neha Hair & Co. Salon in Viman Nagar, Pune. Explore hair styling, hair colour, treatments and book your appointment.">
-  <title>Neha Hair & Co. Salon | Viman Nagar, Pune</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="announcement"><span>YOUR HAIR. YOUR STYLE.</span><span>Viman Nagar, Pune · By appointment</span></div>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Neha Hair and Co home">
-      <span class="brand-mark">N</span><span class="brand-text">NEHA HAIR &amp; CO.<small>S A L O N</small></span>
+<section class="gallery-section section" id="gallery">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">THE LOOKBOOK</p>
+      <h2>Made for <em>your kind of beautiful.</em></h2>
+      <p>
+        Explore hairstyle inspiration and view the salon's
+        real photos on Google Maps.
+      </p>
+    </div>
+    <a class="text-link"
+       href="https://www.google.com/maps/search/?api=1&query=Neha+Hair+%26+Co+Salon+Viman+Nagar+Pune"
+       target="_blank"
+       rel="noopener noreferrer">
+      View on Google Maps ↗
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav" id="mainNav">
-      <a href="#services">Services</a><a href="#salon">Our Salon</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
-      <a class="nav-call" href="tel:+917756999895">Call 07756 999895</a>
-      <button class="button button-gold nav-book" data-book>Book Now</button>
-    </nav>
-  </header>
+  </div>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">NEHA HAIR &amp; CO. · PUNE</p>
-        <h1>Your Hair.<br><em>Your Style.</em></h1>
-        <p class="hero-lede">Expert styling, beautiful colour, and thoughtful hair care that feels personal.</p>
-        <div class="hero-actions"><button class="button button-gold" data-book>Book an Appointment <span>↗</span></button><a class="button button-outline" href="#services">Explore Services</a></div>
-        <div class="hero-values">
-          <div><span>✧</span><small>Trendy<br>Haircuts</small></div><div><span>◇</span><small>Premium<br>Hair Colour</small></div><div><span>✿</span><small>Hair<br>Treatments</small></div><div><span>♡</span><small>Clean &amp;<br>Hygienic</small></div>
-        </div>
-      </div>
-      <div class="hero-photo" role="img" aria-label="Styled brunette hair in a premium salon">
-        <div class="photo-caption"><span>THE ART OF GOOD HAIR</span><p>Personalised care.<br>Beautiful results.</p></div>
-      </div>
-    </section>
+  <div class="gallery-grid">
+    <button class="gallery-item gallery-tall"
+      data-lightbox="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1200&q=90"
+      aria-label="View hairstyle photo">
+      <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=900&q=85"
+        alt="Hairstyle inspiration" loading="lazy">
+      <span>Soft layers</span>
+    </button>
 
-    <section class="section services-section" id="services">
-      <div class="section-heading"><div><p class="eyebrow">THE SALON MENU</p><h2>Find your <em>signature look.</em></h2><p>Explore our popular services. Contact the salon for current prices and availability.</p></div><button class="text-link" data-book>Ask about a service ↗</button></div>
-      <div class="service-grid">
-        <article class="service-card reveal"><img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=85" alt="Woman with a professional hairstyle" loading="lazy"><div class="service-body"><span class="service-number">01 / STYLE</span><h3>Haircuts &amp; Styling</h3><p>Personalised cuts, blow-dries and styling for your everyday or special occasion.</p><button class="text-link service-book" data-service="Haircuts & Styling">Enquire about this ↗</button></div></article>
-        <article class="service-card reveal"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Professional hair colour and styling" loading="lazy"><div class="service-body"><span class="service-number">02 / COLOUR</span><h3>Hair Colour</h3><p>From subtle dimension to expressive colour, tailored to your look and hair goals.</p><button class="text-link service-book" data-service="Hair Colour">Enquire about this ↗</button></div></article>
-        <article class="service-card reveal"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85" alt="Healthy glossy hair" loading="lazy"><div class="service-body"><span class="service-number">03 / CARE</span><h3>Hair Treatments</h3><p>Consultation-led care to help your hair feel softer, healthier and more manageable.</p><button class="text-link service-book" data-service="Hair Treatments">Enquire about this ↗</button></div></article>
-        <article class="service-card reveal"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=85" alt="Long highlighted hair" loading="lazy"><div class="service-body"><span class="service-number">04 / DIMENSION</span><h3>Highlights &amp; Balayage</h3><p>Dimensional colour and natural-looking brightness, planned around your style.</p><button class="text-link service-book" data-service="Highlights & Balayage">Enquire about this ↗</button></div></article>
-      </div>
-      <p class="fine-print">Service availability and prices should be confirmed directly with the salon before booking.</p>
-    </section>
+    <button class="gallery-item"
+      data-lightbox="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=90"
+      aria-label="View hair colour photo">
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85"
+        alt="Hair colour inspiration" loading="lazy">
+      <span>Colour stories</span>
+    </button>
 
-    <section class="salon-section" id="salon">
-      <div class="salon-copy reveal"><p class="eyebrow">A SPACE TO UNWIND</p><h2>Good hair days<br>start <em>here.</em></h2><p>Discover a welcoming salon space in Viman Nagar, Pune, with thoughtful service and attention to detail.</p><ul class="check-list"><li>Personalised consultation</li><li>Clean and comfortable environment</li><li>Honest product recommendations</li><li>Friendly, professional service</li></ul><a class="button button-dark" href="#contact">Plan Your Visit ↗</a></div>
-      <div class="salon-images"><img class="salon-img-large" src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1200&q=85" alt="Modern salon interior" loading="lazy"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d0?auto=format&fit=crop&w=700&q=85" alt="Salon styling stations" loading="lazy"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=700&q=85" alt="Salon hair care space" loading="lazy"></div>
-    </section>
+    <button class="gallery-item"
+      data-lightbox="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=90"
+      aria-label="View hair care photo">
+      <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85"
+        alt="Hair care inspiration" loading="lazy">
+      <span>Healthy shine</span>
+    </button>
 
-    <section class="gallery-section section" id="gallery">
-      <div class="section-heading"><div><p class="eyebrow">THE LOOKBOOK</p><h2>Made for <em>your kind of beautiful.</em></h2><p>Browse style inspiration and discuss your preferred look with the stylist.</p></div><a class="text-link" href="https://www.instagram.com/nehahair_co/" target="_blank" rel="noopener">Instagram ↗</a></div>
-      <div class="gallery-grid">
-        <button class="gallery-item gallery-tall" data-lightbox="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1200&q=90" aria-label="View hairstyle photo"><img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=900&q=85" alt="Long styled hair" loading="lazy"><span>Soft layers</span></button>
-        <button class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=90" aria-label="View hair colour photo"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Hair colour inspiration" loading="lazy"><span>Colour stories</span></button>
-        <button class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=90" aria-label="View hair care photo"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85" alt="Glossy hair finish" loading="lazy"><span>Healthy shine</span></button>
-        <button class="gallery-item" data-lightbox="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=90" aria-label="View balayage photo"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=85" alt="Balayage inspiration" loading="lazy"><span>Dimensional colour</span></button>
-      </div>
-      <p class="fine-print">These are illustrative stock photos. Replace them with salon-approved photos before publishing.</p>
-    </section>
+    <button class="gallery-item"
+      data-lightbox="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=90"
+      aria-label="View balayage photo">
+      <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=85"
+        alt="Balayage inspiration" loading="lazy">
+      <span>Dimensional colour</span>
+    </button>
+  </div>
 
-    <section class="booking-band">
-      <div><p class="eyebrow">YOUR NEXT HAIR MOMENT</p><h2>Let’s create a look<br>that feels like <em>you.</em></h2><p>Tell us what you have in mind and request a convenient appointment time.</p></div>
-      <div class="booking-band-actions"><button class="button button-gold" data-book>Request an Appointment ↗</button><a class="button button-whatsapp" href="https://wa.me/917756999895?text=Hello%20Neha%20Hair%20%26%20Co.%2C%20I%27d%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">WhatsApp the Salon</a></div>
-    </section>
+  <p class="fine-print">
+    Hairstyle images are illustrative inspiration. View the salon's
+    actual photos and current information on Google Maps.
+  </p>
 
-    <section class="reviews-section section" id="reviews">
-      <div class="section-heading"><div><p class="eyebrow">KIND WORDS</p><h2>Real experiences, <em>real reviews.</em></h2><p>Customer feedback shared on Google Maps.</p></div><div class="rating-summary"><strong>4.9<span>/5</span></strong><div class="stars" aria-label="Five stars">★★★★★</div><small>Based on 57 Google reviews<br><span>Rating shown in supplied listing screenshot</span></small></div></div>
-      <div class="review-grid">
-        <article class="review-card reveal"><div class="review-top"><span class="avatar">S</span><div><strong>Sanghamitra Mishra</strong><small>Google review · 3 months ago in screenshot</small></div><span class="stars">★★★★★</span></div><p>“I absolutely love Neha because she does an amazing job with hair colour and treatments. I wanted a Barbie blonde and she gave me exactly that.”</p><span class="review-tag">Hair colour</span></article>
-        <article class="review-card reveal"><div class="review-top"><span class="avatar avatar-two">A</span><div><strong>Customer review</strong><small>Review excerpt from supplied screenshot</small></div><span class="stars">★★★★★</span></div><p>“Love the experience and the haircut. I was scared at first, but the service felt smooth and matched my expectations.”</p><span class="review-tag">Haircut &amp; service</span></article>
-        <article class="review-card reveal"><div class="review-top"><span class="avatar avatar-three">M</span><div><strong>Customer review</strong><small>Review excerpt from supplied screenshot</small></div><span class="stars">★★★★★</span></div><p>Reviewers mention the clean salon, luxurious experience and honest product recommendations without overselling.</p><span class="review-tag">Salon experience</span></article>
-      </div>
-      <a class="button button-outline-dark" href="https://www.google.com/maps/search/?api=1&query=Neha+Hair+%26+Co+Salon+Viman+Nagar+Pune" target="_blank" rel="noopener">View Google listing &amp; reviews ↗</a>
-    </section>
-
-    <section class="contact-section section" id="contact">
-      <div class="contact-copy"><p class="eyebrow">COME SAY HELLO</p><h2>Visit us in <em>Viman Nagar.</em></h2><p>We look forward to helping you plan your next hair appointment.</p>
-        <div class="contact-detail"><span class="contact-icon">⌖</span><div><strong>Address</strong><p>Shop No. 27, Shub Nirvana,<br>Symbiosis College Road, MHADA Colony,<br>Viman Nagar, Pune, Maharashtra 411014</p></div></div>
-        <div class="contact-detail"><span class="contact-icon">◷</span><div><strong>Opening hours</strong><p>Google listing screenshot shows opening at 10:00 AM. Please confirm today's hours with the salon.</p></div></div>
-        <div class="contact-detail"><span class="contact-icon">☎</span><div><strong>Call the salon</strong><p><a href="tel:+917756999895">07756 999895</a></p></div></div>
-        <div class="contact-actions"><a class="button button-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Neha+Hair+%26+Co+Salon%2C+Shop+No+27%2C+Shub+Nirvana%2C+Viman+Nagar%2C+Pune+411014">Get Directions ↗</a><a class="button button-whatsapp" target="_blank" rel="noopener" href="https://wa.me/917756999895?text=Hello%20Neha%20Hair%20%26%20Co.%2C%20I%20have%20a%20question.">Chat on WhatsApp</a></div>
-      </div>
-      <div class="map-wrap"><iframe title="Map showing Viman Nagar, Pune" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Neha%20Hair%20%26%20Co%20Salon%2C%20Viman%20Nagar%2C%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe><a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=Neha+Hair+%26+Co+Salon%2C+Viman+Nagar%2C+Pune" target="_blank" rel="noopener">Open directions in Google Maps ↗</a></div>
-    </section>
-  </main>
-
-  <footer class="footer"><a class="brand brand-footer" href="#top"><span class="brand-mark">N</span><span class="brand-text">NEHA HAIR &amp; CO.<small>S A L O N</small></span></a><p>Your hair. Your style. Your moment.</p><div class="footer-links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div><small>© <span id="year"></span> Neha Hair &amp; Co. Salon. Website concept; confirm details with the business before launch.</small></footer>
-
-  <div class="sticky-actions"><a href="tel:+917756999895">☎ <span>Call</span></a><button data-book>▣ <span>Book</span></button><a href="https://wa.me/917756999895?text=Hello%20Neha%20Hair%20%26%20Co.%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">◉ <span>WhatsApp</span></a><a href="https://www.google.com/maps/dir/?api=1&destination=Neha+Hair+%26+Co+Salon%2C+Viman+Nagar%2C+Pune" target="_blank" rel="noopener">⌖ <span>Directions</span></a></div>
-
-  <dialog class="booking-dialog" id="bookingDialog" aria-labelledby="bookingTitle">
-    <form id="bookingForm" class="booking-form">
-      <button type="button" class="dialog-close" id="closeDialog" aria-label="Close booking form">×</button>
-      <p class="eyebrow">LET'S GET YOU BOOKED</p><h2 id="bookingTitle">Request an <em>appointment.</em></h2><p class="dialog-intro">Fill in your details. We'll prepare a WhatsApp message for the salon so you can confirm availability directly.</p>
-      <label for="customerName">Your name</label><input id="customerName" name="name" autocomplete="name" required placeholder="Enter your name">
-      <label for="customerPhone">Your phone number</label><input id="customerPhone" name="phone" autocomplete="tel" inputmode="tel" required pattern="[0-9+() -]{8,18}" placeholder="Enter your phone number">
-      <label for="serviceSelect">Service you're interested in</label><select id="serviceSelect" name="service" required><option value="">Choose a service</option><option>Haircuts & Styling</option><option>Hair Colour</option><option>Hair Treatments</option><option>Highlights & Balayage</option><option>Keratin & Smoothening</option><option>Hair Spa</option><option>Consultation / Not sure yet</option></select>
-      <div class="form-row"><div><label for="appointmentDate">Preferred date</label><input id="appointmentDate" name="date" type="date" required></div><div><label for="appointmentTime">Preferred time</label><select id="appointmentTime" name="time" required><option value="">Select time</option><option>10:00 AM – 12:00 PM</option><option>12:00 PM – 2:00 PM</option><option>2:00 PM – 4:00 PM</option><option>4:00 PM – 6:00 PM</option><option>6:00 PM – 8:00 PM</option></select></div></div>
-      <label for="bookingNotes">Anything you'd like us to know? <span>(optional)</span></label><textarea id="bookingNotes" name="notes" rows="3" placeholder="Hair goals, current hair colour, questions..."></textarea>
-      <button class="button button-dark submit-booking" type="submit">Continue to WhatsApp ↗</button><small class="form-note">This sends a pre-filled message to WhatsApp; it does not confirm a booking automatically.</small>
-    </form>
-  </dialog>
-  <dialog class="lightbox" id="lightbox"><button class="lightbox-close" id="closeLightbox" aria-label="Close image">×</button><img id="lightboxImage" alt="Expanded salon inspiration"></dialog>
-  <script src="app.js"></script>
-</body>
-</html>
+  <div style="text-align:center; margin-top:24px;">
+    <a class="button button-dark"
+       href="https://www.google.com/maps/search/?api=1&query=Neha+Hair+%26+Co+Salon+Viman+Nagar+Pune"
+       target="_blank"
+       rel="noopener noreferrer">
+      View Real Salon Photos on Google Maps ↗
+    </a>
+  </div>
+</section>nhi 
